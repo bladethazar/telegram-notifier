@@ -8,7 +8,7 @@ import pytz
 import requests
 import logging
 
-local_timezone = pytz.timezone('Europe/Berlin')
+local_timezone = pytz.timezone(os.getenv('TZ'))
 logging.basicConfig(level=logging.INFO, stream=sys.stdout,
                     format='[%(asctime)s.%(msecs)03d] [%(levelname)s]: %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
