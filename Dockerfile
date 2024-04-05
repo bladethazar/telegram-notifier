@@ -6,7 +6,8 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV HOSTNAME="telegram-notifier"
 ENV PORT="5000"
-ENV TZ="Europe/Berlin"  # Set default timezone
+# Set default timezone
+ENV TZ="Europe/Berlin"
 
 # Set the working directory in the container
 WORKDIR /app
