@@ -19,24 +19,32 @@ The script includes the following components:
 - TELEGRAM_CHAT_ID=<YOUR_TELEGRAM_CHAT_ID>
 
    1. Clone and Run
-      a) Clone this git repository.
+      - Clone this git repository.
 
-        - ````git clone <repository_url>````
+      ````shell
+      git clone <repository_url>
+      ````
 
-      b) Build the Docker image.
+      - Build the Docker image.
 
-        - ````docker build -t <IMAGE_TAG> .````
+      ````shell
+      docker build -t <IMAGE_TAG> .
+      ````
 
-      c) Run the docker container.
+      - Run the docker container.
 
-        - ````docker run -d -p 5000:5000 -e TELEGRAM_BOT_CHANNEL_URL=<your_telegram_bot_channel_url> -e TELEGRAM_CHAT_ID=<your_telegram_chat_id> -e TZ=<YOUR_TIMEZONE> bladethazar/telegram-notifier````
+      ````shell
+      docker run -d -p 5000:5000 -e TELEGRAM_BOT_CHANNEL_URL=<your_telegram_bot_channel_url> -e TELEGRAM_CHAT_ID=<your_telegram_chat_id> -e TZ=<YOUR_TIMEZONE> bladethazar/telegram-notifier
+      ````
 
    2. Pull and Run
-      a) Pull the docker image from Docker Hub.
+      - Pull the docker image from Docker Hub.
         - <https://hub.docker.com/repository/docker/bladethazar/telegram-notifier/>
-      b) Run the container directly.
+      - Run the container directly.
 
-        - ````docker run -d -p 5000:5000 -e TELEGRAM_BOT_CHANNEL_URL=<your_telegram_bot_channel_url> -e TELEGRAM_CHAT_ID=<your_telegram_chat_id> -e TZ=<YOUR_TIMEZONE> bladethazar/telegram-notifier````
+      ````shell
+      docker run -d -p 5000:5000 -e TELEGRAM_BOT_CHANNEL_URL=<your_telegram_bot_channel_url> -e TELEGRAM_CHAT_ID=<your_telegram_chat_id> -e TZ=<YOUR_TIMEZONE> bladethazar/telegram-notifier
+      ````
 
 ## Endpoint description
 
